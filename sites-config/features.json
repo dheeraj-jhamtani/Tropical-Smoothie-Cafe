@@ -1,0 +1,208 @@
+{
+  "features": [
+    {
+      "name": "citys",
+      "streamId": "cities",
+      "templateType": "JS",
+      "entityPageSet": {
+        "plugin": {}
+      }
+    },
+    {
+      "name": "index",
+      "streamId": "index",
+      "templateType": "JS",
+      "entityPageSet": {
+        "plugin": {}
+      }
+    },
+    {
+      "name": "location",
+      "streamId": "locations",
+      "templateType": "JS",
+      "entityPageSet": {
+        "plugin": {}
+      }
+    },
+    {
+      "name": "locator",
+      "streamId": "Locator",
+      "templateType": "JS",
+      "entityPageSet": {
+        "plugin": {}
+      }
+    },
+    {
+      "name": "states",
+      "streamId": "states",
+      "templateType": "JS",
+      "entityPageSet": {
+        "plugin": {}
+      }
+    }
+  ],
+  "streams": [
+    {
+      "$id": "cities",
+      "filter": {
+        "savedFilterIds": [
+          "dm_us-directory_address_city"
+        ]
+      },
+      "fields": [
+        "id",
+        "uid",
+        "meta",
+        "name",
+        "description",
+        "slug",
+        "dm_directoryParents.name",
+        "dm_directoryParents.c_addressRegionDisplayName",
+        "dm_directoryParents.slug",
+        "dm_directoryParents.meta",
+        "dm_directoryChildren.name",
+        "dm_directoryChildren.slug",
+        "dm_directoryChildren.dm_baseEntityCount"
+      ],
+      "localization": {
+        "locales": [
+          "en"
+        ],
+        "primary": false
+      }
+    },
+    {
+      "$id": "index",
+      "filter": {
+        "savedFilterIds": [
+          "dm_us-directory"
+        ]
+      },
+      "fields": [
+        "id",
+        "uid",
+        "meta",
+        "name",
+        "slug",
+        "dm_childEntityIds",
+        "dm_directoryChildren.name",
+        "dm_baseEntityCount",
+        "dm_directoryChildren.slug",
+        "dm_directoryChildren.dm_baseEntityCount"
+      ],
+      "localization": {
+        "locales": [
+          "en"
+        ],
+        "primary": false
+      }
+    },
+    {
+      "$id": "locations",
+      "fields": [
+        "id",
+        "uid",
+        "meta",
+        "name",
+        "address",
+        "mainPhone",
+        "hours",
+        "slug",
+        "timezone",
+        "yextDisplayCoordinate",
+        "geocodedCoordinate",
+        "displayCoordinate",
+        "cityCoordinate",
+        "c_bannerSubHeading",
+        "c_bannerHeading",
+        "c_bannerOrderButton",
+        "c_hoursHeading",
+        "c_featuresHeading",
+        "c_contactHeading",
+        "c_features",
+        "c_getDirectionText",
+        "c_joinUsHeading",
+        "c_joinUsDescription",
+        "c_DownloadHeading",
+        "c_appDownloadDetails",
+        "c_appDownloadDetailsText",
+        "c_appDownloadImage",
+        "c_appStore",
+        "c_playStore",
+        "c_product",
+        "c_aboutBackgroundImage",
+        "c_aboutHeading",
+        "c_aboutButton",
+        "c_aboutDescription",
+        "c_markerImage",
+        "c_faqHeading",
+        "c_frequentlyAskedQuestions.question",
+        "c_frequentlyAskedQuestions.answer",
+        "c_nearbyStoresHeading",
+        "c_seeMore",
+        "dm_directoryParents.name",
+        "dm_directoryParents.slug",
+        "dm_directoryParents.meta",
+        "dm_directoryParents.c_addressRegionDisplayName"
+      ],
+      "filter": {
+        "entityTypes": [
+          "location"
+        ]
+      },
+      "localization": {
+        "locales": [
+          "en"
+        ],
+        "primary": false
+      }
+    },
+    {
+      "$id": "Locator",
+      "fields": [
+        "name",
+        "slug"
+      ],
+      "filter": {
+        "entityIds": [
+          "global-data"
+        ]
+      },
+      "localization": {
+        "locales": [
+          "en"
+        ],
+        "primary": false
+      }
+    },
+    {
+      "$id": "states",
+      "filter": {
+        "savedFilterIds": [
+          "dm_us-directory_address_region"
+        ]
+      },
+      "fields": [
+        "id",
+        "uid",
+        "meta",
+        "name",
+        "description",
+        "c_addressRegionDisplayName",
+        "slug",
+        "dm_directoryParents.name",
+        "dm_directoryParents.slug",
+        "dm_directoryParents.meta",
+        "dm_directoryChildren.name",
+        "dm_directoryChildren.slug",
+        "dm_directoryChildren.dm_baseEntityCount"
+      ],
+      "localization": {
+        "locales": [
+          "en"
+        ],
+        "primary": false
+      }
+    }
+  ]
+}

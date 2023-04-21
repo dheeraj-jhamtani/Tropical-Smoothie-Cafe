@@ -1,0 +1,336 @@
+{
+	"__": {
+		"entityPageSet": {
+			"plugin": {}
+		},
+		"name": "citys",
+		"streamId": "cities",
+		"templateType": "JS"
+	},
+	"_site": {
+		"c_copyrightText": "© 2023 Tropical Smoothie Cafe, LLC",
+		"c_downloadApp": {
+			"icon": {
+				"alternateText": "DOWNLOAD APP",
+				"height": 36,
+				"url": "https://a.mktgcdn.com/p-sandbox/BctQs_AwLPJGpgZdW6qpdjE4yjcqMBCJ4WNdK71gFf4/23x36.png",
+				"width": 23
+			},
+			"link": {
+				"label": "DOWNLOAD APP",
+				"link": "#",
+				"linkType": "OTHER"
+			}
+		},
+		"c_findACafe": {
+			"icon": {
+				"alternateText": "FIND A CAFE",
+				"height": 37,
+				"url": "https://a.mktgcdn.com/p-sandbox/4TKRMDbRBaOWYNDQ9j4Jjn8EIyccLT3pMBXyzmPVhPc/23x37.png",
+				"width": 23
+			},
+			"link": {
+				"label": "FIND A CAFE",
+				"link": "#",
+				"linkType": "OTHER"
+			}
+		},
+		"c_footerLinks": [
+			{
+				"links": [
+					{
+						"label": "BLOG",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "OUR STORY",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "LOCATIONS",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "FRANCHISE WITH US",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "NATIONAL FLIP FLOP DAY",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "CAMP SUNSHINE",
+						"link": "#",
+						"linkType": "OTHER"
+					}
+				],
+				"linksHeading": "ABOUT US"
+			},
+			{
+				"links": [
+					{
+						"label": "CATERING",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "GIFT CARDS",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "ONLINE ORDERING",
+						"link": "#",
+						"linkType": "OTHER"
+					}
+				],
+				"linksHeading": "ORDER TROPICAL SMOOTHIE CAFE"
+			},
+			{
+				"links": [
+					{
+						"label": "MENU",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "NUTRITION OVERVIEW",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "NUTRITIONAL GUIDE",
+						"link": "#",
+						"linkType": "OTHER"
+					}
+				],
+				"linksHeading": "SMOOTHIES AND FOOD"
+			},
+			{
+				"links": [
+					{
+						"label": "CORPORATE OPPORTUNITIES",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "CAFE OPPORTUNITIES",
+						"link": "#",
+						"linkType": "OTHER"
+					}
+				],
+				"linksHeading": "CAREERS"
+			},
+			{
+				"links": [
+					{
+						"label": "CONTACT",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "DOWNLOAD APP",
+						"link": "#",
+						"linkType": "OTHER"
+					},
+					{
+						"label": "APP FAQ",
+						"link": "#",
+						"linkType": "OTHER"
+					}
+				],
+				"linksHeading": "HOW CAN WE HELP?"
+			}
+		],
+		"c_footerLogo": {
+			"alternateText": "Footer Logo",
+			"height": 53,
+			"url": "https://a.mktgcdn.com/p-sandbox/t42dX3voyJHoqx5jJSxBmfngFgtqHP6fwZXE4g400Y4/200x53.png",
+			"width": 200
+		},
+		"c_infoLinks": [
+			{
+				"label": "ACCESSIBILITY",
+				"link": "#",
+				"linkType": "OTHER"
+			},
+			{
+				"label": "TERMS AND PRIVACY",
+				"link": "#",
+				"linkType": "OTHER"
+			},
+			{
+				"label": "SITEMAP",
+				"link": "#",
+				"linkType": "OTHER"
+			}
+		],
+		"c_logo": {
+			"height": 72,
+			"url": "https://a.mktgcdn.com/p-sandbox/VH99ZDrASGlb5cI8Z1vkKpQiXZ81T_7BII6gXBKvhS4/339x72.png",
+			"width": 339
+		},
+		"c_navigationLinks": [
+			{
+				"label": "MENU",
+				"link": "#",
+				"linkType": "OTHER"
+			},
+			{
+				"label": "REWARDS",
+				"link": "#",
+				"linkType": "OTHER"
+			},
+			{
+				"label": "CATERING",
+				"link": "#",
+				"linkType": "OTHER"
+			},
+			{
+				"label": "GIFT CARDS",
+				"link": "#",
+				"linkType": "OTHER"
+			},
+			{
+				"label": "CAREERS",
+				"link": "#",
+				"linkType": "OTHER"
+			},
+			{
+				"label": "OWN A FRANCHISE",
+				"link": "#",
+				"linkType": "OTHER"
+			}
+		],
+		"c_orderNow": {
+			"label": "ORDER NOW!",
+			"link": "#",
+			"linkType": "OTHER"
+		},
+		"c_socialLinks": [
+			{
+				"icon": {
+					"height": 24,
+					"url": "https://a.mktgcdn.com/p-sandbox/T1IfSxyN0tvJAfzcuxUugCsEt4ANYJ9m-B2H3ZO4ZDE/11x24.png",
+					"width": 11
+				},
+				"url": "https://facebook.com/"
+			},
+			{
+				"icon": {
+					"alternateText": "insta",
+					"height": 24,
+					"url": "https://a.mktgcdn.com/p-sandbox/rNMCIT9EKPn35aDMiO-SYrYSF772diqL6-v61nwLg0A/24x24.png",
+					"width": 24
+				},
+				"url": "https://facebook.com/"
+			},
+			{
+				"icon": {
+					"height": 19,
+					"url": "https://a.mktgcdn.com/p-sandbox/-1hhUSzf9IkKwO8Zxux-pEldv7h2rQM1d-WUllIocCY/24x19.png",
+					"width": 24
+				},
+				"url": "https://facebook.com/"
+			},
+			{
+				"icon": {
+					"alternateText": "Tittok",
+					"height": 24,
+					"url": "https://a.mktgcdn.com/p-sandbox/GseJN2hu02UVijoIo9tZxSuFmY5HZnEmHX7Pi7euf5w/24x24.png",
+					"width": 24
+				},
+				"url": "https://facebook.com/"
+			},
+			{
+				"icon": {
+					"height": 17,
+					"url": "https://a.mktgcdn.com/p-sandbox/ZWSYF6EbqrupLjQBzGgJ7W_EuSk5NzJgOZlORo7exw4/24x17.png",
+					"width": 24
+				},
+				"url": "https://facebook.com/"
+			},
+			{
+				"icon": {
+					"alternateText": "Pinterest",
+					"height": 24,
+					"url": "https://a.mktgcdn.com/p-sandbox/0p-Ki4GFb2WRlA7OpCscp31ENNFs_SQgIVQGBzy6Zoo/24x24.png",
+					"width": 24
+				},
+				"url": "https://facebook.com/"
+			},
+			{
+				"icon": {
+					"alternateText": "Linkdin",
+					"height": 24,
+					"url": "https://a.mktgcdn.com/p-sandbox/pT1tnMOiqJkuOBAcUwYQHrxhJBdkEgiVIZVvJU_R2GY/24x24.png",
+					"width": 24
+				},
+				"url": "https://facebook.com/"
+			}
+		],
+		"id": "global-data",
+		"meta": {
+			"entityType": {
+				"id": "ce_globalData",
+				"uid": 113660
+			},
+			"locale": "en"
+		},
+		"name": "global data",
+		"uid": 39553290
+	},
+	"businessId": 3205680,
+	"dm_directoryChildren": [
+		{
+			"name": "TROPICAL SMOOTHIE CAFE DOWNERS GROVE",
+			"slug": "810578148809548325"
+		}
+	],
+	"dm_directoryParents": [
+		{
+			"meta": {
+				"entityType": {
+					"id": "ce_root",
+					"uid": 113852
+				},
+				"locale": "en"
+			},
+			"name": "US Directory",
+			"slug": "root.html"
+		},
+		{
+			"c_addressRegionDisplayName": "Illinois",
+			"meta": {
+				"entityType": {
+					"id": "ce_state",
+					"uid": 113854
+				},
+				"locale": "en"
+			},
+			"name": "IL",
+			"slug": "il"
+		}
+	],
+	"id": "us-directory_il_downers_grove",
+	"key": "0:citys:knowledgeGraph:39807476:en",
+	"locale": "en",
+	"meta": {
+		"entityType": {
+			"id": "ce_city",
+			"uid": 113853
+		},
+		"locale": "en"
+	},
+	"name": "Downers Grove",
+	"siteDomain": "",
+	"siteId": 0,
+	"siteInternalHostName": "",
+	"slug": "il/downers-grove",
+	"uid": 39807476
+}

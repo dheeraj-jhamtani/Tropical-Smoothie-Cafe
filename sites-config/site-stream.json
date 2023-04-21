@@ -1,0 +1,24 @@
+{
+  "$id": "site-entity",
+  "filter": {
+    "entityIds": ["global-data"]
+  },
+  "source": "knowledgeGraph",
+  "fields": [
+      "name",
+      "c_logo",
+      "c_navigationLinks",
+      "c_findACafe",
+      "c_orderNow",
+      "c_downloadApp",
+      "c_footerLinks",
+      "c_socialLinks",
+      "c_footerLogo",
+      "c_infoLinks",
+      "c_copyrightText"
+  ],
+  "localization": {
+    "locales": ["en"],
+    "primary": false
+  }
+}
