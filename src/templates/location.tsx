@@ -182,7 +182,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         type: "link",
         attributes: {
           rel: "canonical",
-          href: `${document._site.c_canonicalURL?document.c_canonicalURL:stagingBaseurl
+          href: `${document.c_canonicalURL?document.c_canonicalURL:stagingBaseurl
 
             }${document.slug?document.slug:`${document.name.toLowerCase()}`}.html`,
         },

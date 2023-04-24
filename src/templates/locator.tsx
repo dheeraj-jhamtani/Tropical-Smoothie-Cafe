@@ -84,7 +84,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
        attributes: {
          rel: "canonical",
          href: `${
-           document._site?.c_canonical?document.c_canonical:stagingBaseurl
+           document._site.c_canonical?document._site.c_canonical:stagingBaseurl
             
          }`,
        },
