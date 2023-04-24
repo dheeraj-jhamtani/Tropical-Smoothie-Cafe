@@ -48,6 +48,9 @@ import {
         "name",
         "slug",
         "dm_childEntityIds",
+        "c_metaDescription",
+        "c_metaTitle",
+        "c_canonicalURL",
         "dm_directoryChildren.name",
         "dm_baseEntityCount",
         "dm_directoryChildren.slug",
@@ -116,8 +119,8 @@ import {
           type: "link",
           attributes: {
             rel: "canonical",
-            href: `${document.c_canonical
-                ? document.c_canonical
+            href: `${document.c_canonicalURL
+                ? document.c_canonicalURL
                 : baseuRL+"/locator"
               }`,
           },
