@@ -49,9 +49,6 @@ export const config: TemplateConfig = {
       "address",
       "mainPhone",
       "hours",
-      "c_metaDescription",
-      "c_metaTitle",
-      "c_canonicalURL",
       "slug",
       "timezone",
       "yextDisplayCoordinate",
@@ -149,7 +146,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
   document,
 }): HeadConfig => {
   return {
-    title: document.c_metaTitle?document.c_metaTitle:`${document.name} Store of Tropichl Smoothie Cafe`,
+    title: document.c_meta_title?document.c_meta_title:`${document.name} Store of Tropichl Smoothie Cafe`,
     charset: "UTF-8",
     viewport: "width=device-width, initial-scale=1",
     tags: [
@@ -157,7 +154,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         type: "meta",
         attributes: {
           name: "description",
-          content: `${document.c_metaDescription?document.c_metaDescription:`Find the ${document.name} Timber Store in ${document.address.city}. We stock high-quality, robust products at competitive rates.`}`,
+          content: `${document.c_meta_description?document.c_meta_description:`Find the ${document.name} Timber Store in ${document.address.city}. We stock high-quality, robust products at competitive rates.`}`,
         },
       },
 
@@ -182,7 +179,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         type: "link",
         attributes: {
           rel: "canonical",
-          href: `${document._site.c_canonicalURL?document.c_canonicalURL:stagingBaseurl
+          href: `${document._site.c_canonical?document.c_canonical:stagingBaseurl
 
             }${document.slug?document.slug:`${document.name.toLowerCase()}`}.html`,
         },
@@ -192,7 +189,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         type: "meta",
         attributes: {
           property: "og:description",
-          content: `${document.c_metaDescription?document.c_metaDescription:`Find the ${document.name} Timber Store in ${document.address.city}. We stock high-quality, robust products at competitive rates.`}`,
+          content: `${document.c_meta_description?document.c_meta_description:`Find the ${document.name} Timber Store in ${document.address.city}. We stock high-quality, robust products at competitive rates.`}`,
         },
       },
       {
@@ -227,14 +224,14 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         type: "meta",
         attributes: {
           name: "twitter:title",
-          content: document.c_metaTitle?document.c_metaTitle:`${document.name} Store of Tropichl Smoothie Cafe`,
+          content: document.c_meta_title?document.c_meta_title:`${document.name} Store of Tropichl Smoothie Cafe`,
         },
       },
       {
         type: "meta",
         attributes: {
           name: "twitter:description",
-          content: `${document.c_metaDescription?document.c_metaDescription:`Find the ${document.name} Timber Store in ${document.address.city}. We stock high-quality, robust products at competitive rates.`}`,
+          content: `${document.c_meta_description?document.c_meta_description:`Find the ${document.name} Timber Store in ${document.address.city}. We stock high-quality, robust products at competitive rates.`}`,
         },
       },
       /// twitter tag
@@ -283,7 +280,7 @@ const Location: Template<ExternalApiRenderData> = ({
     slug,
     hours,
     mainPhone,
-    c_canonicalURL,
+    c_canonical,
     description,
     additionalHoursText,
     timezone,
@@ -456,7 +453,7 @@ breadcrumbScheme.push({
           description: description,
           /* image: imageurl, */
           telephone: mainPhone,
-          url: `${c_canonicalURL?c_canonicalURL:stagingBaseurl}${slug?slug:`${name}`}.html`
+          url: `${c_canonical?c_canonical:stagingBaseurl}${slug?slug:`${name}`}.html`
         }}
       />
       <JsonLd<BreadcrumbList>
