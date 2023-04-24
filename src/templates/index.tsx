@@ -48,13 +48,11 @@ import {
         "name",
         "slug",
         "dm_childEntityIds",
-        "c_metaDescription",
-        "c_metaTitle",
-        "c_canonicalURL",
         "dm_directoryChildren.name",
         "dm_baseEntityCount",
         "dm_directoryChildren.slug",
         "dm_directoryChildren.dm_baseEntityCount",
+        
       ],
       // The entity language profiles that documents will be generated for.
       localization: {
@@ -118,8 +116,8 @@ import {
           type: "link",
           attributes: {
             rel: "canonical",
-            href: `${document.c_canonicalURL
-                ? document.c_canonicalURL
+            href: `${document.c_canonical
+                ? document.c_canonical
                 : baseuRL+"/locator"
               }`,
           },

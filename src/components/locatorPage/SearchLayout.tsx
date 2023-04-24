@@ -1,14 +1,20 @@
 import { useSearchActions } from "@yext/search-headless-react";
 import { useEffect, useState, useRef } from 'react';
 import * as React from "react";
+import {  LocationBias, Pagination } from "@yext/search-ui-react";
 
+import { Location } from "../../types/search/locations";
 import LocationCard from "./LocationCard";
+import { AnswersHeadlessProvider } from '@yext/answers-headless-react';
 import { GoogleMaps } from "./GoogleMaps";
 import { useSearchState, Result } from "@yext/search-headless-react";
 import Geocode from "react-geocode";
+import Address from "../commons/Address";
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import $ from "jquery";
+import Banner from "../locationDetail/banner";
+import LoadingSpinner from "../commons/LoadingSpinner";
 import {breadcrumbhome, center_latitude, center_longitude, googleApikey, search_icn, UseMylocationsvg } from "../../../sites-global/global";
 import { StaticData } from "../../../sites-global/staticData";
 
@@ -17,6 +23,7 @@ import ViewMore from "./ViewMore";
 import VerticalResults from "../VerticalResults";
 import ResultsCount from "./ResultsCount";
 import useFetchResults from "../../hooks/useFetchResults";
+import { Link } from "@mui/material";
 import { AnswerExperienceConfig } from "../../config/answersHeadlessConfig";
 
 var params1: any = { latitude: center_latitude, longitude:center_longitude }

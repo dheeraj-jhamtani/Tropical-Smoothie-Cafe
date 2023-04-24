@@ -21,9 +21,6 @@ export const config: TemplateConfig = {
     fields: [
       "name",
       "slug",
-      "c_metaDescription",
-      "c_metaTitle",
-      "c_canonicalURL",
      
     ],
     // Defines the scope of entities that qualify for this stream.
@@ -47,7 +44,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
   document,
 }): HeadConfig => {
  return {
-   title:`${document.c_metaTitle?document.c_metaTitle:`Tropical Smoothie Cafe Near Me - Find Tropical Smoothie Cafe Branch Locator Here.`}`,
+   title:`${document.c_meta_title?document.c_meta_title:`Tropical Smoothie Cafe Near Me - Find Tropical Smoothie Cafe Branch Locator Here.`}`,
    charset: "UTF-8",
    viewport: "width=device-width, initial-scale=1",
    tags: [
@@ -55,7 +52,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
        type: "meta",
        attributes: {
          name: "description",
-         content: `${document.c_metaDescription?document.c_metaDescription:`View Tropical Smoothie Cafe near you today at Tropical Smoothie Cafe.`}`,
+         content: `${document.c_meta_description?document.c_meta_description:`View Tropical Smoothie Cafe near you today at Tropical Smoothie Cafe.`}`,
        },
      },
 
@@ -87,7 +84,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
        attributes: {
          rel: "canonical",
          href: `${
-           document._site?.c_canonicalURL?document.c_canonicalURL:stagingBaseurl
+           document._site?.c_canonical?document.c_canonical:stagingBaseurl
             
          }`,
        },
@@ -97,14 +94,14 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
        type: "meta",
        attributes: {
          property: "og:description",
-         content: `${document.c_metaDescription?document.c_metaDescription:`View Tropical Smoothie Cafe near you today at Tropical Smoothie Cafe.`}`,
+         content: `${document.c_meta_description?document.c_meta_description:`View Tropical Smoothie Cafe near you today at Tropical Smoothie Cafe.`}`,
        },
      },
      {
        type: "meta",
        attributes: {
          property: "og:title",
-         content: `${document.c_metaTitle?document.c_metaTitle:`Tropical Smoothie Cafe Near Me - Find Tropical Smoothie Cafe Branch Locator Here.`}`,
+         content: `${document.c_meta_title?document.c_meta_title:`Tropical Smoothie Cafe Near Me - Find Tropical Smoothie Cafe Branch Locator Here.`}`,
        },
      },
      {
@@ -125,14 +122,14 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
       type: "meta",
       attributes: {
         name: "twitter:description",
-        content:`${document.c_metaDescription?document.c_metaDescription:`View Tropichl Smoothie Cafe near you today at Tropichl Smoothie Cafe.`}`,
+        content:`${document.c_meta_description?document.c_meta_description:`View Tropichl Smoothie Cafe near you today at Tropichl Smoothie Cafe.`}`,
       },
     },
     {
       type: "meta",
       attributes: {
         name: "twitter:title",
-        content: `${document.c_metaTitle?document.c_metaTitle:`Tropichl Smoothie Cafe Near Me - Find Tropichl Smoothie Cafe Branch Locator Here.`}`,
+        content: `${document.c_meta_title?document.c_meta_title:`Tropichl Smoothie Cafe Near Me - Find Tropichl Smoothie Cafe Branch Locator Here.`}`,
       },
     },
     {
@@ -174,7 +171,7 @@ const Locator: Template<TemplateRenderProps>= ({
         item={{
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Topical smoothi cafe ",
+          name: "MGM ",
           url: stagingBaseurl,
           logo: favicon,
         }}

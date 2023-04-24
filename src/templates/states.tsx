@@ -3,7 +3,6 @@ import Banner from "../components/locationDetail/banner";
 import BreadCrumbs from "../components/layouts/Breadcrumb";
 import PageLayout from "../components/layouts/PageLayout";
 import "../index.css";
-import { favicon } from "../../sites-global/global";
 import {
   Template,
   GetPath,
@@ -29,9 +28,6 @@ export const config: TemplateConfig = {
       "description",
       "c_addressRegionDisplayName",
       "slug",
-      "c_metaDescription",
-      "c_metaTitle",
-      "c_canonicalURL",
       "dm_directoryParents.name",
       "dm_directoryParents.slug",
       "dm_directoryParents.meta",
@@ -67,7 +63,7 @@ export const getPath: GetPath<TemplateProps> = ({document}) => {
         attributes: {
           rel: 'icon',
           type: 'image/x-icon',
-          href: favicon
+          href: "../public/yext-favicon.ico"
         },
       }
     ],

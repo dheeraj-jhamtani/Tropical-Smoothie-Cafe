@@ -41,9 +41,6 @@ export const config: TemplateConfig = {
       "meta",
       "name",
       "slug",
-      "c_metaDescription",
-      "c_metaTitle",
-      "c_canonicalURL",
       "dm_directoryParents.name",
       "dm_directoryParents.slug",
       "dm_directoryParents.meta.entityType",
@@ -90,7 +87,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
           })
 
   return {
-    title: `${document.c_metaTitle?document.c_metaTitle:`Topical smoothi cafe Stores in ${document.name} | Find a Local Store`}`,
+    title: `${document.c_meta_title?document.c_meta_title:`MGM Stores in ${document.name} | Find a Local Store`}`,
     charset: "UTF-8",
     viewport: "width=device-width, initial-scale=1",
     tags: [
@@ -105,7 +102,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
           type: "meta",
           attributes: {
             name: "description",
-            content:`${document.c_metaDescription?document.c_metaDescription:`Use this page to find your nearest Topical smoothi cafe store in ${document.name} and discover the location details you need to visit us today.`}`,
+            content:`${document.c_meta_description?document.c_meta_description:`Use this page to find your nearest MGM store in ${document.name} and discover the location details you need to visit us today.`}`,
           },
         },
 
@@ -166,7 +163,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
           type: "meta",
           attributes: {
             property: "og:description",
-            content: `${document.c_metaDescription?document.c_metaDescription:`Find Tropichl Smoothie Cafe Store in ${document.name}. We stock high-quality, robust products at competitive rates.`}`,
+            content: `${document.c_meta_description?document.c_meta_description:`Find Tropichl Smoothie Cafe Store in ${document.name}. We stock high-quality, robust products at competitive rates.`}`,
           },
         },
         {
@@ -203,7 +200,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         type: "meta",
         attributes: {
           name: "twitter:description",
-          content: `${document.c_metaDescription?document.c_metaDescription:`Find Tropichl Smoothie Cafe Store in ${document.name}. We stock high-quality, robust products at competitive rates.`}`
+          content: `${document.c_meta_description?document.c_meta_description:`Find Tropichl Smoothie Cafe Store in ${document.name}. We stock high-quality, robust products at competitive rates.`}`
         },
       },
     ],
@@ -445,7 +442,7 @@ const City: Template<TemplateRenderProps> = ({
           "@context": "https://schema.org",
           "@type": "Store",
           name: "Matalan",
-          //   url: _site.c_canonicalURL,
+          //   url: _site.c_canonical,
           // logo: `${document.c_ogImage ? document.c_ogImage.map((result:any)=>{return result.url}) : ""}`
         }}
       />
@@ -469,7 +466,7 @@ const City: Template<TemplateRenderProps> = ({
           <div className="container mx-auto">
             <div className="sec-title">
               <h2>
-              Topical smoothi cafe stores in {name}
+              MGM stores in {name}
               </h2>
             </div>
             <div className="flex flex-wrap justify-center items-start -mx-2.5 lg:-mx-[.9375rem]">
