@@ -15,7 +15,10 @@
       "c_socialLinks",
       "c_footerLogo",
       "c_infoLinks",
-      "c_copyrightText"
+      "c_copyrightText",
+      "c_metaDescription",
+      "c_metaTitle",
+      "c_canonicalURL"
   ],
   "localization": {
     "locales": ["en"],

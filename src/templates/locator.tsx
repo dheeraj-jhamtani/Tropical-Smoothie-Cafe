@@ -21,10 +21,6 @@ export const config: TemplateConfig = {
     fields: [
       "name",
       "slug",
-      "c_metaDescription",
-      "c_metaTitle",
-      "c_canonicalURL",
-     
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
