@@ -20,11 +20,7 @@ export const config: TemplateConfig = {
     // directly as props to the default exported function.
     fields: [
       "name",
-      "slug",
-      "c_metaDescription",
-      "c_metaTitle",
-      "c_canonicalURL",
-     
+      "slug",     
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
@@ -46,6 +42,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
   path,
   document,
 }): HeadConfig => {
+  console.log(document._site)
  return {
    title:`${document.c_metaTitle?document.c_metaTitle:`Tropical Smoothie Cafe Near Me - Find Tropical Smoothie Cafe Branch Locator Here.`}`,
    charset: "UTF-8",
