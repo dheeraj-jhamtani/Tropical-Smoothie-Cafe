@@ -324,11 +324,13 @@
 		},
 		"url": "https://example.com"
 	},
+	"c_bannerHeading": "TROPICAL SMOOTHIE CAFE",
 	"c_bannerOrderButton": {
 		"label": "ORDER ONLINE",
 		"link": "#",
 		"linkType": "OTHER"
 	},
+	"c_bannerSubHeading": "MOBILE",
 	"c_contactHeading": "CAFE INFO",
 	"c_faqHeading": "FREQUENTLY ASKED QUESTIONS",
 	"c_features": [
