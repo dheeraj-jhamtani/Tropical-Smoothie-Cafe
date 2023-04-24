@@ -3,6 +3,7 @@ import Banner from "../components/locationDetail/banner";
 import BreadCrumbs from "../components/layouts/Breadcrumb";
 import PageLayout from "../components/layouts/PageLayout";
 import "../index.css";
+import { favicon } from "../../sites-global/global";
 import {
   Template,
   GetPath,
@@ -63,7 +64,7 @@ export const getPath: GetPath<TemplateProps> = ({document}) => {
         attributes: {
           rel: 'icon',
           type: 'image/x-icon',
-          href: "../public/yext-favicon.ico"
+          href: favicon
         },
       }
     ],
