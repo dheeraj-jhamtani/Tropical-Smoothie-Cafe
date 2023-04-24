@@ -1,15 +1,15 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 
-export default function Topical smoothi cafeTimber(props:any){
-    console.log(props.c_Topical smoothi cafeInformation,"c_Topical smoothi cafeInformation")
+export default function MgmTimber(props:any){
+    console.log(props.c_mGMInformation,"c_mGMInformation")
     const [title,setTitle]=useState('');
     const getactiveimage=(e:any)=>{
        console.log(e,"event")
        setTitle(e);
     }
     useEffect(()=>{
-        props.c_Topical smoothi cafeInformation.imageInformation?.map((res: any, index: Number) => {
+        props.c_mGMInformation.imageInformation?.map((res: any, index: Number) => {
             if(index==0){
                 setTitle(res.title);
             }
@@ -19,7 +19,7 @@ return(
     <>
     <div className="flex flex-raw">
     <div className="Main-image">
-    {props.c_Topical smoothi cafeInformation.imageInformation?.map((res: any, index: Number) => {
+    {props.c_mGMInformation.imageInformation?.map((res: any, index: Number) => {
                if(title==res.title){
                 return  res.image.map((img:any)=>{
                     return (<>
@@ -34,7 +34,7 @@ return(
         })}
     
          <div className="content-container flex flex-raw">
-        {props.c_Topical smoothi cafeInformation.imageInformation?.map((res: any, index: Number) => {
+        {props.c_mGMInformation.imageInformation?.map((res: any, index: Number) => {
                 return  res.image.map((img:any)=>{
                     return (
                         // <div className={`ProductsImage content ${getActiveClass(i.image.alternateText, "active-content")} ${index == 0 && firstdefault ? "active-content" : ''}`}>
@@ -49,8 +49,8 @@ return(
       </div>
       </div>
       <div className="right-description-content-inner">
-           <p>{props.c_Topical smoothi cafeInformation.description}</p>
-           <button className="btn">{props.c_Topical smoothi cafeInformation.cTA.label}</button>
+           <p>{props.c_mGMInformation.description}</p>
+           <button className="btn">{props.c_mGMInformation.cTA.label}</button>
       </div>
       </div>
     </>
