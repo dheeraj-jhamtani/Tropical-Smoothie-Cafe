@@ -55,7 +55,6 @@ import {
         "dm_baseEntityCount",
         "dm_directoryChildren.slug",
         "dm_directoryChildren.dm_baseEntityCount",
-        
       ],
       // The entity language profiles that documents will be generated for.
       localization: {
